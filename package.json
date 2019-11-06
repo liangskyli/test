@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "test demo",
   "dependencies": {
-    "eruda": "^1.2.5"
+
   },
   "devDependencies": {
-    "expose-loader": "^0.7.3"
   }
 }
