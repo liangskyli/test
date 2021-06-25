@@ -1,0 +1,30 @@
+.spacing(@classNamePrefix,@property,@n, @i: 10) when (@i =< @n) {
+  .@{classNamePrefix}@{i} {
+      @{property}: @i*1px;
+  }
+  .spacing(@classNamePrefix,@property,@n, @i + 2);
+}
+
+/* 左外边距 10-60 如：ml10,ml12 */
+.spacing(ml,margin-left,60);
+
+/* 右外边距 10-60 如：ml10,ml12 */
+.spacing(mr,margin-right,60);
+
+/* 上外边距 10-60 如：mt10,mt12 */
+.spacing(mt,margin-top,60);
+
+/* 下外边距 10-60 如：mb10,mb12 */
+.spacing(mb,margin-bottom,60);
+
+/* 左内边距 10-60 如：pl10,pl12 */
+.spacing(pl,padding-left,60);
+
+/* 右内边距 10-60 如：pr10,pr12 */
+.spacing(pr,padding-right,60);
+
+/* 上内边距 10-60 如：pt10,pt12 */
+.spacing(pt,padding-top,60);
+
+/* 下内边距 10-60 如：pb10,pb12 */
+.spacing(pb,padding-bottom,60);
