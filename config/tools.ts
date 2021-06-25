@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const cdn = 'img.myscrm.cn';
+const cdn = 'img.xxx.cn';
 
 function getPackageInfo() {
   const info = require(`${process.cwd()}/package.json`);
