@@ -23,7 +23,13 @@ const config: IConfigFromPlugins | IConfig = {
   dynamicImport: {
     loading: '@/components/PageLoading/index',
   },
-  mfsu: {}, // 只需要 dev，这么配
+  //mfsu: {}, // 只需要 dev，这么配
+  mfsu: {
+    development: {},
+    production: {
+      output: './.mfsu-prod',
+    },
+  },
   webpack5: {},
   // 多页面提取公共js文件 begin
   chunks: ['vendors', 'umi'],
