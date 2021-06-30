@@ -3,4 +3,12 @@ module.exports = {
   rules: {
     // your rules
   },
+  ignoreFiles: [
+    '**/*.js',
+    '**/*.jsx',
+    '**/*.tsx',
+    '**/*.ts',
+    '.mfsu-dev/**/*.*',
+    '.mfsu-prod/**/*.*',
+  ],
 };

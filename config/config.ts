@@ -25,7 +25,9 @@ const config: IConfigFromPlugins | IConfig = {
   },
   //mfsu: {}, // 只需要 dev，这么配
   mfsu: {
-    development: {},
+    development: {
+      output: './.mfsu-dev',
+    },
     production: {
       output: './.mfsu-prod',
     },

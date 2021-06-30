@@ -2,3 +2,5 @@
 /config
 /public/eruda.js
 /public/vconsole.min.js
+/.mfsu-dev
+/.mfsu-prod
