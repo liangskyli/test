@@ -1,33 +1,18 @@
-config/config.ts里
+##src/pages/index/index.tsx里
+###这块代码开发运行报错
+###SyntaxError: Cannot use import statement outside a module
+```
+import fetchCode from 'b2c-jssdk';
 
-1、chunks的设置构建会有问题
-chunks: ['vendors', 'umi'],
-  chainWebpack: function (config, { env }) {
-    config.merge({
-      optimization: {
-        minimize: env === 'production',
-        splitChunks: {
-          chunks: 'all',
-          minSize: 1,
-          minChunks: 2,
-          automaticNameDelimiter: '.',
-          cacheGroups: {
-            vendor: {
-              name: 'vendors',
-              test({ resource }: any) {
-                return true; // /[\\/]node_modules[\\/]/.test(resource);
-              },
-              priority: 10,
-            },
-          },
-        },
-      },
-    });
-  },
 
-2、这个运行时错误
-extraBabelPlugins: [
-['import', { libraryName: 'antd-mobile', style: true }], //按需加载antd-mobile样式文件
-],
+ fetchCode()
+      .then((code: any) => {
+        console.log('fetchCode code:',code);
+      })
+      .catch(() => {
+        console.log('fetchCode err');
+      });
+     
+```
 
-这两个问题，代码注释就正常，windows,mac都有问题
+

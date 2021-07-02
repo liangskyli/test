@@ -4,6 +4,8 @@ import { Link, connect } from 'umi';
 import IconFont from '@/components/IconFont';
 import styles from './index.less';
 import mockjs from 'mockjs';
+// @ts-ignore
+import fetchCode from 'b2c-jssdk';
 
 console.log(mockjs.Random.string(3, 6));
 
@@ -30,6 +32,14 @@ const IndexPage: ConnectRC<PageProps> = ({ index, dispatch }) => {
     }).then((res: any) => {
       console.log(res);
     });
+
+    fetchCode()
+      .then((code: any) => {
+        console.log('fetchCode code:', code);
+      })
+      .catch(() => {
+        console.log('fetchCode err');
+      });
   };
 
   return (
