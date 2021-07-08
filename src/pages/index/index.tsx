@@ -35,7 +35,7 @@ const IndexPage: ConnectRC<PageProps> = ({ index, dispatch }) => {
       <h1 className={styles.title}>title</h1>
       <div className={styles.title}>name:{name.ykPublicKey}</div>
       <div>热更新问题</div>
-      <div>bbb</div>
+      <div>aaa</div>
       <ul className={styles.list}>
         <li>
           <Link to="/me">前往个人中心</Link>

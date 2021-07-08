@@ -18,3 +18,10 @@ export default memo(
     return true;
   },
 );
+
+/* export default function TabBar(props: Props) {
+  const { activeTab } = props;
+  console.log(activeTab);
+
+  return <IconFont name="icon-common-back-help" className={styles['help-icon']} />;
+} */
