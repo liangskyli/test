@@ -1,0 +1,80 @@
+.am-modal-mask.bg-white {
+  background-color: rgba(0, 0, 0, 0);
+}
+.am-modal-transparent {
+  width: 600px;
+}
+.am-button.no-radius-btn{
+  height: 112px;
+  line-height: 112px;
+  border-radius: 0;
+  &::before {
+    border:none !important;
+    border-radius: 0 !important;
+  }
+}
+.am-button.half-radius-btn{
+  height: 80px;
+  line-height: 80px;
+  border-radius: 999999999px;
+}
+
+.am-button.bottom-fixed-btn {
+  position: fixed !important;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.am-button-warning {
+  background: linear-gradient(90deg, #E23 0%, #F54D22 100%);
+  &::before {
+    border:none !important;
+  }
+}
+.am-button-warning.am-button-active {
+  background: linear-gradient(90deg, #F54D22 0%, #E23 100%);
+}
+.am-button-warning.half-radius-btn{
+  box-shadow: 0 4px 24px 0 rgba(238, 34, 51, 0.2);
+}
+.am-button > span,
+.am-button-default > span{
+  color:@color-main;
+}
+.am-button-warning > span,
+.am-button-primary > span{
+  color:@color-white;
+}
+.am-button-warning.am-button-disabled,
+.am-button-primary.am-button-disabled,
+.am-button-default.am-button-disabled
+{
+  background: #bbb;
+  opacity: 1 !important;
+
+  &::before {
+    border: solid 1px #bbb !important;
+  }
+  > span{
+    color:#fff;
+  }
+}
+.am-button-primary{
+  background: linear-gradient(90deg, #09F 0%, #5CA5FF 100%);}
+.am-button-primary.am-button-active{
+  background: linear-gradient(90deg, #5CA5FF 0%, #09F 100%);
+}
+
+.bottom-two-btns.am-flexbox .am-flexbox-item {
+  margin-left: 0;
+}
+
+.am-toast > span {
+  max-width: 80%;
+}
+
+.flex-none,.am-flexbox .am-flexbox-item.flex-none{
+  flex: none;
+}

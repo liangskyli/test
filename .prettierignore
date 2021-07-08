@@ -1,0 +1,12 @@
+**/*.md
+**/*.svg
+**/*.ejs
+**/*.html
+package.json
+.umi
+.umi-production
+.umi-test
+public/eruda.js
+public/vconsole.min.js
+.mfsu-dev
+.mfsu-prod

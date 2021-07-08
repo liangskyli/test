@@ -1,0 +1,32 @@
+@import './styles/variable';
+@import './styles/extends-antd-mobile';
+@import './styles/color';
+@import './styles/spacing';
+
+html{
+  font-size: 37.5px;
+}
+html, body, #root {
+  height: 100%;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+}
+
+/* iphonex 安全区域 */
+body {
+  margin: 0;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+  overflow-x: hidden;
+  background-color: #fff !important;
+}
+
+/* iphonex fix底部元素适配 */
+:global(.fixed_bottom) {
+  position: fixed;
+  z-index: 10;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+  background-color: #fff;
+}
