@@ -1,4 +1,3 @@
-import Config from '@/utils/config';
 import create from './IconFont';
 import { memo } from 'react';
 
@@ -26,14 +25,9 @@ export type Props = {
 
 export default memo(
   (props: Props) => {
-    const { name, style = {}, size = '', className = '' } = props;
+    const { name, size = '', className = '' } = props;
 
-    const MyIcon = create({
-      scriptUrl: Config.scriptUrl,
-      extraCommonProps: {
-        style,
-      },
-    });
+    const MyIcon = create();
 
     return <MyIcon className={className} name={name} size={size} />;
   },

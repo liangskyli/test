@@ -1,6 +1,4 @@
 import IconFont from '@/components/IconFont';
-// import { history } from 'umi';
-import styles from './index.less';
 import { memo } from 'react';
 
 type Props = {
@@ -12,7 +10,7 @@ export default memo(
     const { activeTab } = props;
     console.log(activeTab);
 
-    return <IconFont name="icon-common-back-help" className={styles['help-icon']} />;
+    return <IconFont name="icon-common-back-help" />;
   },
   () => {
     return true;
