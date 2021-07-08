@@ -16,7 +16,7 @@ export type CustomIconOptions = {
 export default function create(options: CustomIconOptions): FC<IconProps> {
   const { scriptUrl, extraCommonProps } = options;
 
-  const generateScript = (tryCount: number = 0) => {
+  const generateScript = (/* tryCount: number = 0 */) => {
     const script = document.createElement('script');
     script.setAttribute('src', scriptUrl);
     script.setAttribute('data-namespace', scriptUrl);
@@ -29,7 +29,7 @@ export default function create(options: CustomIconOptions): FC<IconProps> {
         }
       }, 1000);
     }; */
-    script.onerror = () => {
+    /* script.onerror = () => {
       // eslint-disable-next-line no-plusplus
       tryCount++;
       // 错误重试加载3次，即最多共加载4次
@@ -40,7 +40,7 @@ export default function create(options: CustomIconOptions): FC<IconProps> {
       } else {
         console.log('加载iconfont资源文件失败');
       }
-    };
+    }; */
     return script;
   };
 

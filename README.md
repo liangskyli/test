@@ -1,18 +1,10 @@
 ##src/pages/index/index.tsx里
-###这块代码开发运行报错
-###SyntaxError: Cannot use import statement outside a module
-```
-import fetchCode from 'b2c-jssdk';
+###热更新问题
 
-
- fetchCode()
-      .then((code: any) => {
-        console.log('fetchCode code:',code);
-      })
-      .catch(() => {
-        console.log('fetchCode err');
-      });
-     
 ```
+<div>热更新问题</div>
+<div>aaa</div>
+```
+aaa 替换bbb,不热更新，后面页面奔溃
 
 

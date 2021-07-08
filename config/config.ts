@@ -16,7 +16,7 @@ const config: IConfigFromPlugins | IConfig = {
     immer: true,
     hmr: true,
   },
-  base: '/sub-react-h5-example/', // 配置虚拟目录，按项目实际情况决定是否需要
+  base: '/', // 配置虚拟目录，按项目实际情况决定是否需要
   publicPath: tools.getPublicPath(),
   routes: pageRoutes,
   //sass: {},

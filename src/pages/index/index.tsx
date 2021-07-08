@@ -3,11 +3,7 @@ import type { IndexModelState, ConnectRC, Loading } from 'umi';
 import { Link, connect } from 'umi';
 import IconFont from '@/components/IconFont';
 import styles from './index.less';
-import mockjs from 'mockjs';
-// @ts-ignore
-import fetchCode from 'b2c-jssdk';
-
-console.log(mockjs.Random.string(3, 6));
+import TabBar from '@/components/TabBar';
 
 type PageProps = {
   index: IndexModelState;
@@ -32,20 +28,14 @@ const IndexPage: ConnectRC<PageProps> = ({ index, dispatch }) => {
     }).then((res: any) => {
       console.log(res);
     });
-
-    fetchCode()
-      .then((code: any) => {
-        console.log('fetchCode code:', code);
-      })
-      .catch(() => {
-        console.log('fetchCode err');
-      });
   };
 
   return (
     <div className={styles.normal}>
       <h1 className={styles.title}>title</h1>
       <div className={styles.title}>name:{name.ykPublicKey}</div>
+      <div>热更新问题</div>
+      <div>bbb</div>
       <ul className={styles.list}>
         <li>
           <Link to="/me">前往个人中心</Link>
@@ -53,32 +43,12 @@ const IndexPage: ConnectRC<PageProps> = ({ index, dispatch }) => {
         <li>
           <IconFont name="icon-common-back-help" className={styles['help-icon']} />
         </li>
-        <li>
-          <Link to="/me">前往个人中心</Link>
-        </li>
-        <li>
-          <Link to="/me">前往个人中心</Link>
-        </li>
-        <li>
-          <Link to="/me">前往个人中心</Link>
-        </li>
-        <li>
-          <Link to="/me">前往个人中心</Link>
-        </li>
-        <li>
-          <Link to="/me">前往个人中心</Link>
-        </li>
-        <li>
-          <Link to="/me">前往个人中心</Link>
-        </li>
-        <li>
-          <Link to="/me">前往个人中心</Link>
-        </li>
       </ul>
       <Button type="primary" onClick={() => myButton()}>
         test
       </Button>
       {inputComponent()}
+      <TabBar activeTab="orderList" />
     </div>
   );
 };
