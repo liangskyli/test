@@ -1,5 +1,5 @@
-const img404 = require('@/assets/404.svg');
-const img500 = require('@/assets/500.svg');
+import img404 from '@/assets/404.svg';
+import img500 from '@/assets/500.svg';
 
 const config = {
   '404': {

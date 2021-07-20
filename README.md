@@ -1,17 +1,10 @@
-##src/pages/index/index.tsx里
-###热更新问题
-
-```
-<div>热更新问题</div>
-<div>aaa</div>
-```
-aaa 替换bbb,不热更新，后面页面奔溃
-
-
-```
-这两个一起就有问题，其中一个没问题
-<IconFont name="icon-common-back-help" />
-<TabBar activeTab="orderList" />
+```angular2
+Unhandled Rejection (ChunkLoadError): Loading chunk mf-dep_vendors failed.
+(missing: http://127.0.0.1:8001/vendors.1990e8e6.async.js)
+while loading "./$CWD$/node_modules/umi/node_modules/@umijs/runtime" from webpack/container/reference/mf
+while loading "./dva" from webpack/container/reference/mf
+while loading "./antd-mobile/lib/toast/style" from webpack/container/reference/mf
+while loading "./react" from webpack/container/reference/mf
 ```
 
 
