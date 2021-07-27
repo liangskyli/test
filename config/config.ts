@@ -34,7 +34,7 @@ const config: IConfigFromPlugins | IConfig = {
   },
   webpack5: {},
   // 多页面提取公共js文件 begin
-  chunks: ['vendors', 'umi'],
+  /*chunks: ['vendors', 'umi'],
   chainWebpack: function (config, { env }) {
     config.merge({
       optimization: {
@@ -56,7 +56,7 @@ const config: IConfigFromPlugins | IConfig = {
         },
       },
     });
-  },
+  },*/
   // 多页面提取公共js文件 end
   extraPostCSSPlugins: [
     px2rem({

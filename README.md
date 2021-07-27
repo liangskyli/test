@@ -1,3 +1,4 @@
+关闭chunks问题
 ```
 Unhandled Rejection (ChunkLoadError): Loading chunk mf-dep_vendors failed.
 (missing: http://127.0.0.1:8000/vendors.4d9c60da.async.js)
